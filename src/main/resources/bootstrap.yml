@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: msa-users
+  cloud:
+    config:      discovery:        enabled: true
+        service-id: msi-config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: ${vcap.services.eureka-service.credentials.url}
+        
