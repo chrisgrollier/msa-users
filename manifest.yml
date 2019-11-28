@@ -14,3 +14,4 @@ applications:
     
   services:
     - eureka-service
+    - users-database
