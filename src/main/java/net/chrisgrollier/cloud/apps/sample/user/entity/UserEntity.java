@@ -15,7 +15,7 @@ import com.google.common.base.MoreObjects;
  *
  */
 @Entity
-@Table(name = "USER")
+@Table(name = "USERS")
 public class UserEntity {
 
 	/** The user identifier */
