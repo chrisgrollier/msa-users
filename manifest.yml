@@ -1,7 +1,7 @@
 ---
 applications:
 - name: users-server
-  memory: 682M
+  memory: 736M
   disk_quota: 256M
   routes:
   - route: users-server-bdx01.apps.eu01.cf.canopy-cloud.com
