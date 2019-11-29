@@ -7,11 +7,11 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import net.chrisgrollier.cloud.apps.common.exception.service.EntityNotFoundUnrecoverableException;
+import net.chrisgrollier.cloud.apps.common.util.mapping.BidiMapper;
 import net.chrisgrollier.cloud.apps.sample.user.dao.UserDAO;
 import net.chrisgrollier.cloud.apps.sample.user.entity.UserEntity;
-import net.chrisgrollier.cloud.apps.sample.user.exception.service.EntityNotFoundUnrecoverableException;
 import net.chrisgrollier.cloud.apps.sample.user.model.User;
-import net.chrisgrollier.cloud.apps.sample.user.util.mapping.BidiMapper;
 
 @Service
 public class UserService {
