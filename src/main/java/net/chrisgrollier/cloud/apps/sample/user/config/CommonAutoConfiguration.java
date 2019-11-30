@@ -5,16 +5,14 @@ import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.core.env.Environment;
 
 import net.chrisgrollier.cloud.apps.common.i18n.MessageManager;
 import net.chrisgrollier.cloud.apps.common.internal.i18n.DefaultMessageManager;
 
 /**
- * Auto configuration class responsible to create a {@link LogServiceFactory}
- * and {@link DefaultMessageManager} beans if not present in the application
- * context. Is also responsible to populate logging system global environment
- * properties based on an instance of a spring {@link Environment} object.
+ * Auto configuration class responsible to create a
+ * {@link DefaultMessageManager} beans if not present in the application
+ * context. 
  */
 @Configuration
 public class CommonAutoConfiguration {
